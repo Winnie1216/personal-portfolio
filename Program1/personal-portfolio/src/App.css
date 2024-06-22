@@ -107,7 +107,7 @@ nav.navbar {
 
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #640650;
+  background-color: #151515;
 }
 
 nav.navbar a.navbar-brand {
@@ -180,7 +180,7 @@ span.navbar-text {
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
-.navbar-text button {
+/* .navbar-text button {
   font-weight: 700;
   color: #fff;
   border: 1px solid #fff;
@@ -210,6 +210,72 @@ span.navbar-text {
 
 .navbar-text button:hover {
   color: #121212;
+} */
+.button-animated {
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 28px;
+  font-size: 18px;
+  margin-left: 18px;
+  position: relative;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+  border-radius: 15px;
+}
+
+.button-animated span {
+  z-index: 1;
+}
+
+.button-animated::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  transition: left 0.5s ease;
+}
+
+.button-animated:hover::before {
+  left: 100%;
+}
+
+.button-animated:hover {
+  color: #292929;
+  background-color: #fff;
+}
+
+.navbar-text button {
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 28px;
+  font-size: 18px;
+  margin-left: 18px;
+  position: relative;
+  background-color: transparent;
+  border-radius: 15px;
+  /* 添加圆角 */
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-text button:hover {
+  background-color: #fff;
+  color: #121212;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  /* 添加阴影效果 */
+  transform: translateY(-3px);
+  /* 添加轻微的上移效果 */
+}
+
+.navbar-text button:active {
+  transform: translateY(0);
+  /* 按下时恢复原位 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* 按下时的阴影效果 */
 }
 
 .navbar-text button:hover::before {
@@ -273,6 +339,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Banner Css ************/
+
+
+.txt-rotate .wrap {
+  color: #b82587;
+  font-style: italic;
+
+}
+
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
@@ -282,11 +356,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-repeat: no-repeat;
 }
 
-.banner .tagline {
+/* .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
   background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+} */
+.banner .tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(90deg, rgba(255, 105, 180, 0.8), rgba(138, 43, 226, 0.8));
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -352,4 +436,120 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .txt-rotate>.wrap {
   border-right: 0.08em solid #666;
+}
+
+/* Education css */
+.heading {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 700;
+  margin: 80px 15px;
+}
+
+.Education {
+  padding: 80px 15px;
+  background: #151515;
+}
+
+.timeline-items {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.timeline-items::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: #ffffff;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd) {
+  padding-right: calc(50% + 40px);
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  padding-left: calc(50% + 40px);
+}
+
+.timeline-dot {
+  height: 21px;
+  width: 21px;
+  background-color: #f1e6e6;
+  box-shadow: 0 0 25px rgb(241, 51, 184);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-10.5px);
+  border-radius: 50%;
+  top: 10px;
+}
+
+.timeline-date {
+  font-size: 20px;
+  font-weight: 800;
+  color: #fcfbfb;
+  position: absolute;
+  top: -55px;
+  white-space: nowrap;
+}
+
+.timeline-item:nth-child(odd) .timeline-date {
+  right: calc(50% + 40px);
+}
+
+.timeline-item:nth-child(even) .timeline-date {
+  left: calc(50% + 40px);
+}
+
+.timeline-content {
+  background-color: #151515;
+  border: 3px solid rgb(241, 51, 184);
+  padding: 30px 50px;
+  border-radius: 35px;
+  box-shadow: 0 0 10px rgb(241, 51, 184);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.timeline-item:hover .timeline-content {
+  color: #ffffff;
+}
+
+.timeline-content:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgb(241, 51, 184);
+}
+
+.timeline-content h3,
+.timeline-content p {
+  color: #ffffff;
+}
+
+.timeline-content h3 {
+  font-size: 20px;
+  margin: 0 0 10px;
+  font-weight: 500;
+}
+
+.timeline-content p {
+  color: #979595;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
 }

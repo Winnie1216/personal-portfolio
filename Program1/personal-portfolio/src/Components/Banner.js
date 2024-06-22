@@ -47,6 +47,10 @@ export const Banner = () => {
             }
         }
     };
+    const handleViewResume = () => {
+
+        window.open('/Resume.pdf', '_blank');
+    };
 
     return (
         <section className="banner" id="home">
@@ -59,7 +63,7 @@ export const Banner = () => {
                                     <span className="tagline">Welcome to my Portfolio</span>
                                     <h1>{`Hi! I'm`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                                     <p>A passionate and dedicated software developer with a strong enthusiasm for coding and technology. This website is a showcase of my skills, projects, and the journey I've embarked on in the world of software development.</p>
-                                    <button onClick={() => console.log('connect')}>Check my Resume<ArrowRightCircle size={25} /></button>
+                                    <button className="button-animated" onClick={handleViewResume}><span>My Resume</span><ArrowRightCircle size={25} /></button>
                                 </div>}
                         </TrackVisibility>
                     </Col>
