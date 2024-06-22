@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+
 import { TimelineItem } from "../Components/TimelineItem";
 
 export const Education = () => {
