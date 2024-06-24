@@ -1,5 +1,4 @@
 import { Col } from "react-bootstrap";
-
 import { useState } from 'react';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 

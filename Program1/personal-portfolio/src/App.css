@@ -180,37 +180,6 @@ span.navbar-text {
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
-/* .navbar-text button {
-  font-weight: 700;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 18px 34px;
-  font-size: 18px;
-  margin-left: 18px;
-  position: relative;
-  background-color: transparent;
-  transition: 0.3s ease-in-out;
-}
-
-.navbar-text button span {
-  z-index: 1;
-}
-
-.navbar-text button::before {
-  content: "";
-  width: 0%;
-  height: 100%;
-  position: absolute;
-  background-color: #fff;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  transition: 0.3s ease-in-out;
-}
-
-.navbar-text button:hover {
-  color: #121212;
-} */
 .button-animated {
   font-weight: 700;
   color: #fff;
@@ -265,8 +234,7 @@ span.navbar-text {
 .navbar-text button:hover {
   background-color: #fff;
   color: #121212;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
-  /* 添加阴影效果 */
+
   transform: translateY(-3px);
   /* 添加轻微的上移效果 */
 }
@@ -699,4 +667,92 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .proj-imgbx:hover .proj-txtx .arrow-icon {
   display: block;
+}
+
+
+/* Contact css */
+.contact {
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  padding: 60px 0 200px 0;
+}
+
+.contact img {
+  width: 92%;
+}
+
+.contact h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  color: #fff;
+  margin: 0 0 8px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+  background: rgba(255, 255, 255, 1);
+  color: #121212;
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.contact form input:focus::placeholder,
+.contact form textarea:focus::placeholder {
+  color: #121212;
+  opacity: 0.8;
+}
+
+.contact form button {
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  padding: 14px 48px;
+  font-size: 18px;
+  margin-top: 25px;
+  border-radius: 0;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.contact form button span {
+  z-index: 1;
+  position: relative;
+}
+
+.contact form button:hover {
+  color: #fff;
+}
+
+.contact form button::before {
+  content: "";
+  background: #121212;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.contact form button:hover::before {
+  width: 100%;
 }

@@ -51,9 +51,11 @@ export const NavBar = () => {
                 <img src={navIcon2} alt="" />
               </a>
             </div>
-            <button className="vvd" onClick={() => console.log("connect")}>
-              <span>Let's connect</span>
-            </button>
+            <Nav.Link href="#connect" className={activeLink === "connect" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink('connect')}>
+              <button className="vvd" onClick={() => console.log("connect")}>
+                <span>Let's connect</span>
+              </button>
+            </Nav.Link>
           </span>
         </Navbar.Collapse>
       </Container>
