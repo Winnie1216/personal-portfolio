@@ -673,17 +673,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Contact css */
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 60px 0 200px 0;
+  padding: 180px 0 200px 0;
+  height: 940px;
 }
 
 .contact img {
-  width: 92%;
+  width: 100%;
 }
 
 .contact h2 {
   font-size: 45px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .contact form input,
@@ -693,7 +694,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   color: #fff;
-  margin: 0 0 8px 0;
+  margin: 0 0 15px 0;
   padding: 18px 26px;
   font-weight: 500;
   font-size: 18px;
@@ -727,7 +728,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
-  border-radius: 0;
+  border-radius: 15px;
   position: relative;
   transition: 0.3s ease-in-out;
 }
@@ -739,6 +740,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .contact form button:hover {
   color: #fff;
+  border-radius: 15px;
 }
 
 .contact form button::before {
@@ -750,9 +752,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   top: 0;
   left: 0;
   z-index: 0;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
+  border-radius: 15px;
 }
 
 .contact form button:hover::before {
   width: 100%;
+  border-radius: 15px;
 }
