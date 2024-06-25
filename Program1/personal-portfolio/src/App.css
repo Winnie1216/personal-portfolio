@@ -112,8 +112,6 @@ nav.navbar.scrolled {
 
 nav.navbar a.navbar-brand {
   width: 7%;
-
-
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -723,14 +721,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .contact form button {
   font-weight: 700;
-  color: #000;
-  background-color: #fff;
+  color: #fff;
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
   border-radius: 15px;
   position: relative;
   transition: 0.3s ease-in-out;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .contact form button span {
@@ -739,24 +738,52 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .contact form button:hover {
-  color: #fff;
-  border-radius: 15px;
+  color: #2b2929;
 }
 
 .contact form button::before {
   content: "";
-  background: #121212;
   width: 0;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
   border-radius: 15px;
 }
 
 .contact form button:hover::before {
   width: 100%;
   border-radius: 15px;
+  background-color: #fff;
+
+
+}
+
+/* Footer css */
+
+.footer {
+  padding: 0 0 50px 0;
+  background-image: url('./assets/img/footer-bg.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer .social-icon {
+  margin-top: 25px;
+}
+
+.footer .logo {
+  width: 10%;
+  margin-top: -30px;
+}
+
+.footer p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #B8B8B8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
 }
